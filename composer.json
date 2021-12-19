@@ -1,0 +1,43 @@
+{
+    "name": "laraveldemoservice/laraveldemoservice",
+    "description": "Laravel laraveldemoservice",
+    "keywords": ["laravel", "laraveldemoservice"],
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Le Van Hai",
+        "email": "levanhai97.it@gmail.com"
+      }
+    ],
+    "require": {
+        "illuminate/support": "5.4.*||5.5.*||5.6.*||5.7.*||5.8.*||^6.0||^7.0||^8.0",
+        "illuminate/session": "5.4.*||5.5.*||5.6.*||5.7.*||5.8.*||^6.0||^7.0||^8.0",
+        "illuminate/events": "5.4.*||5.5.*||5.6.*||5.7.*||5.8.*||^6.0||^7.0||^8.0",
+        "nesbot/carbon": "~1.20||^1.26.3||^2.0",
+        "symfony/cache": "^5.3",
+		"psr/cache": "^1.0",
+		"psr/simple-cache": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.0||~6.0||~7.0||~8.0||~9.0",
+        "mockery/mockery": "^1.0",
+        "orchestra/testbench": "^3.4|^4.0|^5.0|^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "Hailv\\Demo\\Providers\\": "src/"
+        }
+    },
+    "suggest": {
+        "gloudemans/notify": "Simple flash notifications for Laravel"
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hailv\\Demo\\Providers\\DemoServiceProvider"
+            ]
+        }
+    }
+  }
+  
